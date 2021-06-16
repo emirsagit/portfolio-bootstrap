@@ -3,6 +3,10 @@ ul {
   padding: 0;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .h-screen {
   height: 100vh;
 }
@@ -21,9 +25,28 @@ ul {
 }
 
 .bg-header {
-  background: url('../img/bg-header-desktop.png') no-repeat;
+  background: url('../img/bg-header.png') no-repeat;
   background-size: cover;
   border-radius: 0 0 0 80px;
   border: none;
   width: 100%;
+}
+
+.bg-contact {
+  background: url('../img/bg-footer-desktop.png') no-repeat, #6070ff;
+  background-size: cover;
+}
+
+.border-radius-right-top {
+  border-radius: 0 80px 0 0;
+}
+
+.border-radius-left-top {
+  border-radius: 80px 0 0 0;
+}
+
+@media only screen and (min-width: 992px) {
+  .bg-header {
+    background: url('../img/bg-header-desktop.png') no-repeat;
+  }
 }
